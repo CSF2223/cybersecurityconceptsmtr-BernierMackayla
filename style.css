@@ -8,13 +8,12 @@ accent: #251749
 html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 body {
     background-color: #251749;
     font-family: 'Open Sans', sans-serif;
-    
 }
 
 header {
@@ -24,7 +23,14 @@ header {
     margin: 1.2rem;
 }
 
-h1, 
+footer {
+    background-color: #FFFBEB;
+    margin: 1.2rem;
+    padding: 1.5rem;
+    font-size: 0.55rem;
+}
+
+h1,
 h2 {
     text-align: center;
 }
@@ -39,7 +45,6 @@ li {
     padding: 0.2rem;
 }
 
-
 .post {
     background-color: #FFFBEB;
     margin: 1.2rem;
@@ -49,5 +54,34 @@ li {
 
 .post p {
     text-indent: 1.2rem;
-    
 }
+
+.source {
+    letter-spacing: 1px;
+}
+
+.source {
+    text-decoration: none;
+    color: #495579;
+}
+
+
+
+@media (min-width: 800px) {
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .post {
+        width: 25%;
+        font-size: 1.1rem;
+    }
+}
+ footer {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     font-size: 6.7rem;
+ }
